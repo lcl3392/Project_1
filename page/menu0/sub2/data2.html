@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style></style>
+    
+</head>
+<body>
+
+
+    <ul>
+        <li></li>
+        <li></li>
+    </ul>
+    
+
+    <script type="module">
+        // import 사용자 정의 변수 
+        import data from './data/txt.js';
+        console.log(data)
+
+        let li = document.querySelectorAll('.list4 .career-txt li');
+        // forEach - li 안에 배열값 출력
+
+        li.forEach ( (item, idx) => {
+            item.textContent = data[idx];
+        })
+
+
+
+
+    </script>
+
+
+
+<pre>
+
+</pre>
+
+</body>
+</html>
